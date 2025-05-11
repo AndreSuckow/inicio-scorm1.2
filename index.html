@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso SCORM</title>
+    <link rel="stylesheet" href="./config/reset.css">
+</head>
+<body>
+    <div class="secao active">
+        <h1>Seção 1</h1>
+        <p>Primeira seção do curso</p>
+    </div>
+    
+    <div class="secao">
+        <h1>Seção 2</h1>
+        <p>Segunda seção do curso</p>
+    </div>
+    
+    <div class="secao">
+        <h1>Seção 3</h1>
+        <p>Terceira seção do curso</p>
+    </div>
+
+    <nav class="nav">
+        <button onclick="goToSection(currentSectionIndex - 1)">Anterior</button>
+        <button onclick="goToSection(currentSectionIndex + 1)">Próximo</button>
+    </nav>
+
+    <script src="./scripts/SCORM_API_wrapper.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
